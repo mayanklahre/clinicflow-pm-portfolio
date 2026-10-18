@@ -54,4 +54,4 @@ Create a Scrum project named **ClinicFlow** with key **CLIN**. Add components: `
 | 34 | Go-Live | As PM, I run cutover checklist. **AC:** backup, access, provider, fallback and approval checks complete. | Must | 3 | 3 |
 | 35 | Go-Live | As sponsor, I approve pilot/rollback readiness. **AC:** dated go/no-go decision is recorded. | Must | 2 | 3 |
 
-**Planned capacity:** Sprint 1 = 45 points, Sprint 2 = 50 points, Sprint 3 = 45 points. Treat this as a planning estimate. Reforecast after each sprint using actual velocity.
+**Source-design allocation:** Sprint 1 = 38 points (9 stories), Sprint 2 = 51 points (14 stories), Sprint 3 = 40 points (12 stories). This is the allocation in this documented backlog design, not a report of live Jira estimates. The configured Jira board currently uses a different story allocation (15 / 10 / 10) and has no estimates entered; reconcile and rebaseline the board before recording actual velocity.

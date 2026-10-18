@@ -26,6 +26,7 @@ ClinicFlow is a self-initiated, low-code appointment-scheduling and no-show-redu
 - [MVP test evidence](docs/16-mvp-test-evidence.md)
 - [Simulated UAT and SUS dry run](docs/17-simulated-uat-sus.md)
 - [Simulated limited pilot dry run](docs/18-simulated-pilot.md)
+- [Visual evidence capture guide](docs/19-visual-evidence-capture-guide.md)
 - [Weekly status reports](status-reports/)
 - [Control spreadsheet](sheets/ClinicFlow-control-pack.xlsx)
 

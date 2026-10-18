@@ -13,7 +13,7 @@ Verify that the Airtable prototype can represent the core booking workflow using
 | Environment | ClinicFlow Airtable illustrative portfolio base |
 | Patient data | Fictional Airtable test record only; no real patient information used |
 | Candidate slot | `SLOT-ILL-02` |
-| Test appointment reference | `TEST-BOOKING-20261017` |
+| Test appointment references | `TEST-BOOKING-20261017`; manual-retest record `TEST-BOOKING-20261018` |
 | Message sending | Not attempted; no WhatsApp or SMS message sent |
 | Automation platform | Not yet configured; Make sign-in/build is pending |
 
@@ -22,9 +22,9 @@ Verify that the Airtable prototype can represent the core booking workflow using
 | Test step | Expected result | Actual result | Status |
 |---|---|---|---|
 | Open Bookable slots | Only records with `Slot status = Available` are visible | Seven availability records displayed | Pass |
-| Create illustrative appointment | Appointment is created with a unique reference and fictional link data | `TEST-BOOKING-20261017` was created in Appointments | Partial pass |
-| Link selected slot and mark it Booked | Appointment links to `SLOT-ILL-02`; slot changes from Available to Booked | Airtable’s AI record action created the appointment but did not reliably complete the linked-slot update | Blocked / retest manually |
-| Queue test reminder | A linked reminder entry is created with status Queued and “not sent” note | Not created during the same action | Blocked / retest manually |
+| Create illustrative appointment | Appointment is created with a unique reference and fictional link data | `TEST-BOOKING-20261017` and `TEST-BOOKING-20261018` were created in Appointments; the latter was created manually on 18 October 2026 | Pass for record creation only |
+| Link selected slot and mark it Booked | Appointment links to `SLOT-ILL-02`; slot changes from Available to Booked | The manual retest began, but browser access was disabled before the linked Slot field could be set and verified | Blocked / complete manual retest |
+| Queue test reminder | A linked reminder entry is created with status Queued and “not sent” note | Not created; Make remains unconnected and the Airtable retest did not reach the Reminder log field | Blocked / complete after test-only Make configuration |
 | Send a message | No message is sent | No send action was configured or attempted | Pass (safety control) |
 
 ## Findings and follow-up
@@ -39,7 +39,7 @@ Verify that the Airtable prototype can represent the core booking workflow using
 Capture the following after the manual retest; show only illustrative records:
 
 - Bookable slots: one before and one after the selected slot changes to Booked.
-- Appointments: the `TEST-BOOKING-20261017` record with its fictional links and Confirmed status.
+- Appointments: the `TEST-BOOKING-20261018` record with its fictional links and Confirmed status.
 - No-show report: filtered `Status = No-show` view.
 - Front-desk today: appointments sorted by scheduled start.
 - Figma overview: all eight frames visible.

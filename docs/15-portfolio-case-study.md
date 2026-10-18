@@ -46,7 +46,7 @@ The numbers are plausible working assumptions for planning, not claims about a r
 
 The PRD uses MoSCoW priorities. The MVP must support doctor/type selection, available slots, minimum contact details, consent, duplicate-booking prevention, confirmation, reschedule/cancel request handling, reminder workflow, front-desk visibility, doctor availability, and no-show reporting.
 
-The Jira project contains seven epics—Online Booking, Reminders, Front-Desk Dashboard, Doctor Schedules, No-Show Reports, Privacy and Consent, and Go-Live—and 35 stories with acceptance criteria. They are allocated as 15 Sprint 1, 10 Sprint 2, and 10 Sprint 3 stories. Actual sprint execution dates and progress must only be recorded when they occur.
+The configured Jira project is keyed `CLIN` and contains seven epics—Online Booking, Reminders, Front-Desk Dashboard, Doctor Schedules, No-Show Reports, Privacy and Consent, and Go-Live—plus 35 work items with `CLIN-` keys. At verification on 18 October 2026, the board allocation was 15 work items in Sprint 1, 10 in Sprint 2, and 10 in Sprint 3; no story-point estimates were set on the board. The written backlog-design table has a different proposed allocation (9 / 14 / 12; 38 / 51 / 40 points), so it must be reconciled with Jira before it is used for capacity or velocity reporting. Actual sprint execution dates and progress must only be recorded when they occur.
 
 ### 3. Design and working prototype
 
@@ -68,7 +68,7 @@ This walkthrough is a controlled test using only illustrative Airtable records. 
 4. A reminder log entry can be queued as a test record. No WhatsApp/SMS message is sent until a test-only Make scenario has been configured and separately approved.
 5. Completion, cancellation, or no-show status feeds the reporting view and makes the pilot KPI denominator auditable.
 
-The first fictional Airtable test successfully displayed the Bookable slots view and created `TEST-BOOKING-20261017`, but the AI-assisted action did **not** reliably complete its linked slot/reminder updates. This is recorded as a partial pass—not a completed end-to-end test—in the [MVP test evidence](16-mvp-test-evidence.md).
+The fictional Airtable tests displayed the Bookable slots view and created `TEST-BOOKING-20261017` and `TEST-BOOKING-20261018`, but neither test has yet demonstrated a reliable linked-slot or reminder-log update. This is recorded as a partial pass—not a completed end-to-end test—in the [MVP test evidence](16-mvp-test-evidence.md).
 
 ## How I managed trade-offs
 
