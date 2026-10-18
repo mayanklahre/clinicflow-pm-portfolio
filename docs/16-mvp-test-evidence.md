@@ -1,6 +1,6 @@
 # ClinicFlow MVP test evidence
 
-> **Integrity note:** This record describes an illustrative, fictional-data test performed on 17 October 2026. It is not a production release, clinical trial, patient booking, or evidence that messages were sent.
+> **Integrity note:** This record describes illustrative, fictional-data tests performed on 17 and 18 October 2026. It is not a production release, clinical trial, patient booking, or evidence that messages were sent.
 
 ## Test objective
 
@@ -23,20 +23,20 @@ Verify that the Airtable prototype can represent the core booking workflow using
 |---|---|---|---|
 | Open Bookable slots | Only records with `Slot status = Available` are visible | Seven availability records displayed | Pass |
 | Create illustrative appointment | Appointment is created with a unique reference and fictional link data | `TEST-BOOKING-20261017` and `TEST-BOOKING-20261018` were created in Appointments; the latter was created manually on 18 October 2026 | Pass for record creation only |
-| Link selected slot and mark it Booked | Appointment links to `SLOT-ILL-02`; slot changes from Available to Booked | The manual retest began, but browser access was disabled before the linked Slot field could be set and verified | Blocked / complete manual retest |
-| Queue test reminder | A linked reminder entry is created with status Queued and “not sent” note | Not created; Make remains unconnected and the Airtable retest did not reach the Reminder log field | Blocked / complete after test-only Make configuration |
+| Link selected slot and mark it Booked | Appointment links to `SLOT-ILL-02`; slot changes from Available to Booked | On 18 October, `TEST-BOOKING-20261018` was linked to `SLOT-ILL-02` and the slot status was changed to `Booked` | Pass (manual retest) |
+| Queue test reminder | A linked reminder entry is created with status Queued and “not sent” note | `REM-TEST-20261018` was linked to the appointment with type `24 hours`, status `Queued`, blank channel/provider fields, and the note “TEST ONLY — NOT SENT”. The base currently offers only WhatsApp/SMS channel options, so no channel was selected rather than misrepresenting a live route. | Pass (manual retest; no-send) |
 | Send a message | No message is sent | No send action was configured or attempted | Pass (safety control) |
 
 ## Findings and follow-up
 
-1. The Bookable slots filter and appointment-record creation both worked with fictional data.
-2. The linked record update must be performed and verified as a separate manual test. This is an important MVP limitation, not something to hide in the case study.
-3. Before pilot, add an acceptance test for atomic slot locking: a slot must not remain visible as bookable once an appointment is confirmed.
-4. Build the Make reminders only after signing in, using a test record and a disabled/no-send or sandbox route first. Do not connect a live WhatsApp/SMS provider until the consent, cost, and privacy approval decisions are complete.
+1. The Bookable-slots filter, appointment creation, linked-slot update, and queued no-send reminder record worked with fictional data in a manual retest.
+2. The Airtable Channel field currently offers only WhatsApp and SMS. Leave it blank for test-only reminders until a distinct `Test only` option is added; this avoids falsely recording a live message channel.
+3. Before pilot, add an acceptance test for atomic slot locking: a slot must not remain visible as bookable once an appointment is confirmed, and a second attempt must be rejected.
+4. Make remains unconnected. Build it only with a disabled/no-send or sandbox route first; do not connect a live WhatsApp/SMS provider until consent, cost, and privacy decisions are approved.
 
 ## Screenshot checklist
 
-Capture the following after the manual retest; show only illustrative records:
+Capture the following from the completed manual retest; show only illustrative records:
 
 - Bookable slots: one before and one after the selected slot changes to Booked.
 - Appointments: the `TEST-BOOKING-20261018` record with its fictional links and Confirmed status.
@@ -46,7 +46,7 @@ Capture the following after the manual retest; show only illustrative records:
 
 ## Retest acceptance criteria
 
-The booking workflow may be recorded as passed only when all four conditions are visible in the system:
+The core manual workflow is evidenced for criteria 1–3. It may be recorded as a complete booking-control pass only when all four conditions are visible in the system:
 
 1. A new appointment has a fictional patient, doctor, slot, scheduled time, Online channel, Confirmed status, and consent check.
 2. The linked slot is `Booked` and no longer appears in Bookable slots.

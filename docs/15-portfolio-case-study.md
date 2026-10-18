@@ -68,7 +68,7 @@ This walkthrough is a controlled test using only illustrative Airtable records. 
 4. A reminder log entry can be queued as a test record. No WhatsApp/SMS message is sent until a test-only Make scenario has been configured and separately approved.
 5. Completion, cancellation, or no-show status feeds the reporting view and makes the pilot KPI denominator auditable.
 
-The fictional Airtable tests displayed the Bookable slots view and created `TEST-BOOKING-20261017` and `TEST-BOOKING-20261018`, but neither test has yet demonstrated a reliable linked-slot or reminder-log update. This is recorded as a partial pass—not a completed end-to-end test—in the [MVP test evidence](16-mvp-test-evidence.md).
+The fictional Airtable tests displayed Bookable slots and created `TEST-BOOKING-20261017` and `TEST-BOOKING-20261018`. On 18 October 2026, the manual retest linked `SLOT-ILL-02`, changed it to `Booked`, and linked a queued no-send reminder record (`REM-TEST-20261018`). Make remains unconnected and no message was sent. Atomic duplicate-booking prevention has not yet been tested, so this is evidence of the core manual workflow—not a completed end-to-end automation test—in the [MVP test evidence](16-mvp-test-evidence.md).
 
 ## How I managed trade-offs
 
