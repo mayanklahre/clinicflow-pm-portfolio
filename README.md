@@ -20,6 +20,10 @@ ClinicFlow is a self-initiated, low-code appointment-scheduling and no-show-redu
 - [UAT, cutover, and training](docs/10-go-live.md)
 - [Closure, handover, and retrospective](docs/11-closure-retrospective.md)
 - [Project logs](docs/12-project-logs.md)
+- [Airtable MVP build specification](docs/13-airtable-mvp-build.md)
+- [Figma wireframe specification](docs/14-figma-wireframe-spec.md)
+- [Portfolio case study](docs/15-portfolio-case-study.md)
+- [MVP test evidence](docs/16-mvp-test-evidence.md)
 - [Weekly status reports](status-reports/)
 - [Control spreadsheet](sheets/ClinicFlow-control-pack.xlsx)
 
@@ -32,3 +36,11 @@ The schedule dates precede the package creation date. The files in `status-repor
 ## Repository conventions
 
 Jira issue keys should appear in implementation commits, for example `CLIN-14: add slot conflict check`. Public screenshots may show only fictional test data. The backlog is designed for the Jira workflow `Backlog → Selected → In Progress → In Review → Testing → Done`.
+
+## Live portfolio artefacts
+
+- [Figma — ClinicFlow MVP Wireframes](https://www.figma.com/design/sYNusDRBYRRAoBrUZGB80R/ClinicFlow-%E2%80%94-MVP-Wireframes?node-id=0-1)
+- [Airtable — ClinicFlow illustrative MVP base](https://airtable.com/appPRFexcwanz7lC0)
+- [Process maps — draw.io source](diagrams/ClinicFlow-process-maps.drawio)
+
+The live Figma and Airtable links may require the owner to grant view access. Before making a public share link, confirm that each screen and record contains only fictional portfolio data.
