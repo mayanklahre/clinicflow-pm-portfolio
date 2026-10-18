@@ -24,6 +24,8 @@ ClinicFlow is a self-initiated, low-code appointment-scheduling and no-show-redu
 - [Figma wireframe specification](docs/14-figma-wireframe-spec.md)
 - [Portfolio case study](docs/15-portfolio-case-study.md)
 - [MVP test evidence](docs/16-mvp-test-evidence.md)
+- [Simulated UAT and SUS dry run](docs/17-simulated-uat-sus.md)
+- [Simulated limited pilot dry run](docs/18-simulated-pilot.md)
 - [Weekly status reports](status-reports/)
 - [Control spreadsheet](sheets/ClinicFlow-control-pack.xlsx)
 
