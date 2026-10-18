@@ -27,6 +27,7 @@ ClinicFlow is a self-initiated, low-code appointment-scheduling and no-show-redu
 - [Simulated UAT and SUS dry run](docs/17-simulated-uat-sus.md)
 - [Simulated limited pilot dry run](docs/18-simulated-pilot.md)
 - [Visual evidence capture guide](docs/19-visual-evidence-capture-guide.md)
+- [Evidence gallery and captions](docs/20-evidence-gallery.md)
 - [Weekly status reports](status-reports/)
 - [Control spreadsheet](sheets/ClinicFlow-control-pack.xlsx)
 
@@ -47,3 +48,16 @@ Jira issue keys should appear in implementation commits, for example `CLIN-14: a
 - [Process maps — draw.io source](diagrams/ClinicFlow-process-maps.drawio)
 
 The live Figma and Airtable links may require the owner to grant view access. Before making a public share link, confirm that each screen and record contains only fictional portfolio data.
+
+## Evidence gallery
+
+All screenshots below contain illustrative portfolio data only. They document the configuration and a manual test; they do not represent a production deployment, a live patient booking, or SMS/WhatsApp delivery.
+
+| Evidence | What it shows |
+| --- | --- |
+| [Jira sprint allocation](assets/jira-sprint-allocation.png) | The configured CLIN board with 15, 10, and 10 work items in Sprints 1–3. |
+| [Bookable slots — before manual retest](assets/airtable-bookable-slots-before-retest.png) | The fictional slot was available before the test booking. |
+| [Airtable appointment — before manual retest](assets/airtable-appointments-before-retest.png) | The illustrative appointment table before the test record was completed. |
+| [Linked appointment evidence](assets/airtable-appointment-links.png) | TEST-BOOKING-20261018 linked to SLOT-ILL-02 and REM-TEST-20261018; reminder-sent fields remain clear. |
+| [No-show evidence](assets/airtable-no-show-evidence.png) | An illustrative no-show record used for the reporting workflow. |
+| [Figma wireframe overview](assets/figma-wireframes-overview.png) | The eight planned MVP screens. |
