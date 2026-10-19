@@ -3,7 +3,7 @@
 ClinicFlow is a self-initiated, low-code appointment-scheduling and no-show-reduction MVP for a five-doctor outpatient clinic. It is not a paid client engagement and contains no patient data.
 
 **Project dates:** 3 August–11 October 2026  
-**Project manager:** Kirito  
+**Project manager:** Mayank Lahre  
 **Delivery approach:** plan and budget baseline first, then three two-week Scrum sprints and controlled pilot release.
 
 ## Portfolio map
