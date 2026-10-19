@@ -61,3 +61,15 @@ All screenshots below contain illustrative portfolio data only. They document th
 | [Linked appointment evidence](assets/airtable-appointment-links.png) | TEST-BOOKING-20261018 linked to SLOT-ILL-02 and REM-TEST-20261018; reminder-sent fields remain clear. |
 | [No-show evidence](assets/airtable-no-show-evidence.png) | An illustrative no-show record used for the reporting workflow. |
 | [Figma wireframe overview](assets/figma-wireframes-overview.png) | The eight planned MVP screens. |
+
+
+## Standard project layer
+
+This standard navigation layer complements the detailed portfolio documents above.
+
+- [Standard brief](docs/01-brief.md)
+- [Standard requirements summary](docs/02-requirements.md)
+- [Standard decision-log summary](docs/03-decision-log.md)
+- [Standard risk summary](docs/04-risks.md)
+- [Standard quality and tests summary](docs/05-quality-and-tests.md)
+- [Standard retrospective](docs/06-retrospective.md)
