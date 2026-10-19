@@ -6,4 +6,4 @@
 
 **Done:** project charter, stakeholder register, feasibility assessment, and research plan drafted. **Planned next week:** approve baseline documents, create CLIN epics/backlog, set budget and controls. **Velocity / burndown:** not started; baseline week. **SPI/CPI:** n.a. until planned/earned/actual effort is logged.
 
-**Top risks:** R1 staff adoption (16), R2 double booking (12), R3 scope creep (12). **Blocker:** real interview/baseline evidence not yet collected — Kirito, due before pilot. **Decision needed:** sponsor confirms charter and MVP boundary. **Changes:** none.
+**Top risks:** R1 staff adoption (16), R2 double booking (12), R3 scope creep (12). **Blocker:** real interview/baseline evidence not yet collected — Mayank, due before pilot. **Decision needed:** sponsor confirms charter and MVP boundary. **Changes:** none.
