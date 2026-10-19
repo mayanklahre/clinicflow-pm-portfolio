@@ -7,7 +7,7 @@
 | Project | ClinicFlow: appointment scheduling and no-show reduction MVP |
 | Sponsor | Prof. Nikhil Rao, faculty mentor |
 | Product owner | Dr. Aditi Sharma, clinic operations representative (portfolio role) |
-| Project manager | Kirito |
+| Project manager | Mayank Lahre |
 | Start / finish | 3 August 2026 / 11 October 2026 |
 | Delivery team | Arjun Mehta (developer), Sana Iyer (UX/QA), Rohan Kapoor (privacy/UAT support) |
 | Method | Up-front baseline plan and budget; three two-week Scrum sprints; pilot and controlled closure |
