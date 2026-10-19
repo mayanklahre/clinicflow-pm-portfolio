@@ -1,0 +1,19 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Local operating data and exports
+*.csv
+*.xlsx
+*.xls
+*.jsonl
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Generated/temporary evidence
+tmp/
+coverage/
